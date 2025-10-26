@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        forum: ['Forum', 'cursive'], // 👈 add this line
+      },
+    },
   },
   plugins: [],
 }
