@@ -28,7 +28,8 @@ function Home() {
   return (
 
     <div
-      class="bg-cover bg-center h-[100vh] w-full flex flex-col justify-center items-center text-white overflow-hidden" 
+      key={currentIndex}
+      class="bg-cover bg-center bgZoomIn overflow-hidden h-[100vh] w-full flex flex-col justify-center items-center text-white overflow-hidden" 
       style={{ backgroundImage: `url(${items[currentIndex].background})` }}>
      
       <AnimatePresence mode="wait">
@@ -54,7 +55,7 @@ function Home() {
               Come with family & feel the joy of mouthwatering food
             </span>
 
-            <button id='apply-dm_sans-font' className='w-[240px] h-[57px] bg-transparent  font-bold text-[12px] tracking-[3px] border-[hsl(38,61%,73%)] border-2 mt-[30px]'>
+            <button id='apply-dm_sans-font' className='w-[240px] h-[57px] bg-transparent  font-bold text-[12px] tracking-[3px] border-[hsl(38,61%,73%)] border-2 mt-[30px] hover:bg-[hsl(38,61%,73%)] hover:text-black hover:cursor-pointer transition-all duration-300'>
               VIEW OUT MENU
             </button>
             
