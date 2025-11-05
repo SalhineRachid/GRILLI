@@ -47,11 +47,11 @@ function Home() {
 
             <img src={separator} className='w-[120px] h-[60px] ' />
 
-            <h1 className="text-[8rem] w-[60%] h-[40%] flex items-center justify-center p-[2.5%]" id='apply-forum-font'>
+            <h1 className="text-[8rem] w-[70%] h-[40%] flex items-center justify-center p-[2.5%]" id='apply-forum-font'>
               {items[currentIndex].subtitle} 
             </h1>
 
-            <span id='apply-dm_sans-font' className='font-semibold text-[20px] mb-[10px]'>
+            <span id='apply-dm_sans-font' className='font-semibold text-[20px] mb-[10px] mt-[10px]'>
               Come with family & feel the joy of mouthwatering food
             </span>
 
