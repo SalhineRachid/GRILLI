@@ -10,6 +10,21 @@
   }
 }
 
+@keyframes strech {
+  0% {
+    height: 96%;
+    transform: translateY(2%);
+  }
+  100% {
+    height: 104%;
+    transform: translateY(-3%);
+  }
+}
+
+.strechInOut{
+  animation: strech 2s ease infinite alternate;
+
+}
 
 .bgZoomIn {
   animation: bgZoomIn 5s ease-in-out forwards;
