@@ -10,21 +10,16 @@
   }
 }
 
-@keyframes strech {
-  0% {
-    height: 96%;
-    transform: translateY(2%);
-  }
-  100% {
-    height: 104%;
-    transform: translateY(-3%);
-  }
+@keyframes upDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }  /* Move up 30px */
+  100% { transform: translateY(0); }
 }
 
-.strechInOut{
-  animation: strech 2s ease infinite alternate;
-
+.upDownMotion {
+  animation: upDown 2s ease-in-out infinite;
 }
+
 
 .bgZoomIn {
   animation: bgZoomIn 5s ease-in-out forwards;
