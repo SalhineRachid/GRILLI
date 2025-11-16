@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MenuItem from "../Components/MenuItem";
 import menu1 from "../assets/menu-1.png";
 import menu2 from "../assets/menu-2.png";
@@ -10,7 +10,37 @@ import shape5 from "../assets/shape-5.png";
 import shape6 from "../assets/shape-6.png";
 import separator from "../assets/separator.svg";
 import "./font.css";
+
+
 function Menu() {
+
+  const [menuData , setMenuData] = useState({page:{} , menuItems:[]});
+  const [loading , setLoading] = useState(true);
+  const [error , setError] = useState(null);
+
+  useEffect( () => {
+    const fetchMenuData = async () => {
+      try{
+        setLoading(true)
+        const response = await fakeApi.get('menu_data.json');
+        setMenuData(response.data)
+        setError(null)
+      }catch(err){
+        console.error('Error loading menu data :' , err)
+        setError('Failed to load menu data')
+      }finally{
+        setLoading(false)
+      }
+
+    }
+    fetchMenuData();
+  
+  },[])
+
+  const {page , menuItems} = menuData;
+
+  
+
   return (
     <div className="relative h-[100vh] w-[100%] flex justify-center items-center bg-[#171616]">
       <div className="absolute left-[45%] top-[100px] z-10 flex flex-col justify-center items-center">
@@ -18,7 +48,7 @@ function Menu() {
                   id="apply-dm_sans-font"
                   className="font-bold  text-[13px] text-[hsl(38,61%,73%)] tracking-widest"
                 >
-                  SPECIAL SELECTION
+                  {page.subtitle}
                 </h4>
       
                 <img src={separator} className="w-[120px] h-[60px] " />
@@ -87,7 +117,7 @@ function Menu() {
         </div>
       </div>
 
-      <h3>During winter daily from <span>7:00 pm</span> to <span>9:00 pm</span></h3>
+      
 
       <button
             id="apply-dm_sans-font"

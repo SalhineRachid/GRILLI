@@ -1,0 +1,45 @@
+{
+  "page": {
+    "title": "Delicious Menu",
+    "subtitle": "SPECIAL SELECTION",
+    "buttonText": "VIEW ALL MENU"
+  },
+  "menuItems": [
+    {
+      "id": 1,
+      "dishName": "Greek Salad",
+      "dishPrice": "$25.50",
+      "dishIng": "Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese."
+    },
+    {
+      "id": 2,
+      "dishName": "Butternut Pumpkin",
+      "dishPrice": "$10.00",
+      "dishIng": "Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand."
+    },
+    {
+      "id": 3,
+      "dishName": "Olivas Rellenas",
+      "dishPrice": "$25.00",
+      "dishIng": "Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper."
+    },
+    {
+      "id": 4,
+      "dishName": "Lasagne",
+      "dishPrice": "$40.00",
+      "dishIng": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices."
+    },
+    {
+      "id": 5,
+      "dishName": "Tokusen Wagyu",
+      "dishPrice": "$39.00",
+      "dishIng": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices."
+    },
+    {
+      "id": 6,
+      "dishName": "Opu Fish",
+      "dishPrice": "$49.00",
+      "dishIng": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices."
+    }
+  ]
+}
