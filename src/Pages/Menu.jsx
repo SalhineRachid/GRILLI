@@ -48,13 +48,13 @@ function Menu() {
   
   },[])
 
-  const leftColumn = menuData.menuItems.slice(0, 3);
-  const rightColumn = menuData.menuItems.slice(3, 6);
+    const leftColumn = menuData.menuItems.slice(0, 3);
+    const rightColumn = menuData.menuItems.slice(3, 6);
 
   
 
   return (
-    <div className="relative h-[100vh] w-[100%] flex justify-center items-center bg-[#171616]">
+    <div className="relative h-screen w-full flex justify-center items-center bg-[#171616]">
       <div className="absolute left-[45%] top-[100px] z-10 flex flex-col justify-center items-center">
                 <h4
                   id="apply-dm_sans-font"
@@ -67,7 +67,9 @@ function Menu() {
 
       <h1 id="apply-forum-font" className="absolute z-10 left-[38%] top-40 text-[70px] text-white">{menuData.page.title}</h1>
       
-      <img className="absolute w-[45%] h-[full] inset-0 z-0 upDownMotion " src={shape5}/>
+    
+        <img className="absolute w-[45%] h-[90%] top-[2.9rem] inset-0 z-0 upDownMotion " src={shape5}/>
+  
       <div className="absolute w-[600px] h-[350px] bottom-[70px] right-0 ">
         <img className="absolute w-[full] upDownMotion z-0" src={shape6}/>
       </div>
