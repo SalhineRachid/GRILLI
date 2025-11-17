@@ -1,15 +1,13 @@
-import React from 'react'
-import logo from '../assets/logo.svg'
+import React from "react";
+import logo from "../assets/logo.svg";
 
 function Navbar() {
   return (
-
     <nav class="flex justify-between items-center p-[1%] fixed w-full bg-transparent ">
-
-      <img src={logo}/>
+      <img src={logo} />
 
       <li class="flex w-[30%] justify-between items-center font-dm_sans text-white text-[0.90rem] font-semibold">
-        <ul>HOME</ul>  
+        <ul>HOME</ul>
         <ul>MENUS</ul>
         <ul>ABOUT US</ul>
         <ul>OUR CHEFS</ul>
@@ -20,7 +18,7 @@ function Navbar() {
         FIND A TABLE
       </button>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
