@@ -55,7 +55,7 @@ function Menu() {
 
   return (
     <div className="relative h-screen w-full flex justify-center items-center bg-[#171616]">
-      <div className="absolute left-[45%] top-[100px] z-10 flex flex-col justify-center items-center">
+      <div className="absolute left-[45%] top-[6rem] z-10 flex flex-col justify-center items-center">
                 <h4
                   id="apply-dm_sans-font"
                   className="font-bold  text-[13px] text-[hsl(38,61%,73%)] tracking-widest"
@@ -74,7 +74,7 @@ function Menu() {
         <img className="absolute w-[full] upDownMotion z-0" src={shape6}/>
       </div>
 
-      <div className="w-[full] h-[70%] flex justify-center items-center gap-40  top-[130px] absolute z-10">
+      <div className="w-[full] h-[70%] flex justify-center items-center gap-40  top-[10rem] absolute z-10">
          <div className="w-[60%] flex flex-col justify-between items-center gap-12 text-white">
           {
           leftColumn.map((item , index) => (<MenuItem 
@@ -103,7 +103,7 @@ function Menu() {
 
       <button
             id="apply-dm_sans-font"
-            className="absolute z-10 top-[80%] left-[43%] text-white w-[240px] h-[57px] bg-transparent  font-bold text-[12px] tracking-[3px] border-[hsl(38,61%,73%)] border-2 mt-[30px] hover:bg-[hsl(38,61%,73%)] hover:text-black hover:cursor-pointer transition-all duration-300"
+            className="absolute z-10 top-[80%] left-[43%] text-white w-[15rem] h-[57px] bg-transparent  font-bold text-[12px] tracking-[3px] border-[hsl(38,61%,73%)] border-2 mt-[30px] hover:bg-[hsl(38,61%,73%)] hover:text-black hover:cursor-pointer transition-all duration-300"
           >
             {menuData.page.buttonText}
           </button>
