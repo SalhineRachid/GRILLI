@@ -36,7 +36,7 @@ function Home() {
   return (
     <div
       key={currentIndex}
-      className="bg-cover bg-center bg-fixed bgZoomIn  h-screen w-full flex flex-col justify-between items-center text-white px-8 py-12"
+      className="bg-cover bg-center bg-fixed bgZoomIn overflow-hidden h-screen w-full flex flex-col justify-between items-center text-white px-8 py-12"
       style={{ backgroundImage: `url(${items[currentIndex].background})` }}
     >
       <AnimatePresence mode="wait">
@@ -48,21 +48,19 @@ function Home() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="relative flex flex-col justify-between items-center text-center h-screen px-8 py-12 w-full"
         >
-
           <div className="flex flex-col items-center">
             <h4
-            id="apply-dm_sans-font"
-            className="font-bold text-[0.85rem] text-[hsl(38,61%,73%)] tracking-widest"
+              id="apply-dm_sans-font"
+              className="font-bold text-[0.85rem] text-[hsl(38,61%,73%)] tracking-widest"
             >
               {items[currentIndex].title}
             </h4>
 
             <img src={separator} className="w-[7.5rem] h-[3.75rem] " />
           </div>
-          
 
           <h1
-            className="text-[2rem] sm:text-[4rem] md:text-[5.5rem] lg:text-[8rem] w-11/12 md:w-3/4 lg:w-2/3 flex items-center justify-center p-2 sm:p-4"
+            className="text-[2rem] sm:text-[4rem] md:text-[5.5rem] lg:text-[7rem] w-11/12 md:w-3/4 lg:w-2/3 flex items-center justify-center p-2 sm:p-4"
             id="apply-forum-font"
           >
             {items[currentIndex].subtitle}
@@ -75,8 +73,7 @@ function Home() {
             Come with family & feel the joy of mouthwatering food
           </span>
 
-          <PrimaryButton content ="VIEW OUR MENU"/>
-        
+          <PrimaryButton content="VIEW OUR MENU" />
         </motion.div>
       </AnimatePresence>
     </div>

@@ -11,6 +11,7 @@ import shape6 from "../assets/shape-6.png";
 import separator from "../assets/separator.svg";
 import "./font.css";
 import fakeApi from "../api";
+import PrimaryButton from "../Components/PrimaryButton";
 
 const imageMap = {
   1: menu1,
@@ -103,12 +104,7 @@ function Menu() {
           </div>
         </div>
 
-        <button
-          id="apply-dm_sans-font"
-          className="text-white w-[15rem] h-[3.6rem] bg-transparent  font-bold text-[0.75rem] tracking-[0.1875rem] border-[hsl(38,61%,73%)] border-2 hover:bg-[hsl(38,61%,73%)] hover:text-black hover:cursor-pointer transition-all duration-300"
-        >
-          {menuData.page.buttonText}
-        </button>
+        <PrimaryButton content={menuData.page.buttonText}/>
       </div>
     </div>
   );

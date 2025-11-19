@@ -28,3 +28,7 @@
   background-position: center;
   background-size: cover;
 }
+
+  .custom-letter-spacing {
+    letter-spacing: 0.4em;
+  }
