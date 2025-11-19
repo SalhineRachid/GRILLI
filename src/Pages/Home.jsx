@@ -4,6 +4,7 @@ import pic2 from "../assets/hero-slider-2.jpg";
 import pic3 from "../assets/hero-slider-3.jpg";
 import separator from "../assets/separator.svg";
 import { motion, AnimatePresence } from "framer-motion";
+import PrimaryButton from "../Components/PrimaryButton";
 import "./font.css";
 function Home() {
   const items = [
@@ -35,7 +36,7 @@ function Home() {
   return (
     <div
       key={currentIndex}
-      class="bg-cover bg-center bgZoomIn overflow-hidden h-[100vh] w-full flex flex-col justify-center items-center text-white overflow-hidden"
+      className="bg-cover bg-center bg-fixed bgZoomIn  h-screen w-full flex flex-col justify-between items-center text-white px-8 py-12"
       style={{ backgroundImage: `url(${items[currentIndex].background})` }}
     >
       <AnimatePresence mode="wait">
@@ -45,19 +46,23 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -40 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="flex flex-col justify-center items-center text-center h-[100vh] w-full"
+          className="relative flex flex-col justify-between items-center text-center h-screen px-8 py-12 w-full"
         >
-          <h4
-            id="apply-dm_sans-font"
-            className="font-bold text-[13px] text-[hsl(38,61%,73%)] tracking-widest"
-          >
-            {items[currentIndex].title}
-          </h4>
 
-          <img src={separator} className="w-[120px] h-[60px] " />
+          <div className="flex flex-col items-center">
+            <h4
+            id="apply-dm_sans-font"
+            className="font-bold text-[0.85rem] text-[hsl(38,61%,73%)] tracking-widest"
+            >
+              {items[currentIndex].title}
+            </h4>
+
+            <img src={separator} className="w-[7.5rem] h-[3.75rem] " />
+          </div>
+          
 
           <h1
-            className="text-[8rem] w-[70%] h-[40%] flex items-center justify-center p-[2.5%]"
+            className="text-[2rem] sm:text-[4rem] md:text-[5.5rem] lg:text-[8rem] w-11/12 md:w-3/4 lg:w-2/3 flex items-center justify-center p-2 sm:p-4"
             id="apply-forum-font"
           >
             {items[currentIndex].subtitle}
@@ -65,17 +70,13 @@ function Home() {
 
           <span
             id="apply-dm_sans-font"
-            className="font-semibold text-[20px] mb-[10px] mt-[10px]"
+            className="font-semibold text-[20px] mb-[0.625rem] mt-[0.625rem]"
           >
             Come with family & feel the joy of mouthwatering food
           </span>
 
-          <button
-            id="apply-dm_sans-font"
-            className="w-[240px] h-[57px] bg-transparent  font-bold text-[12px] tracking-[3px] border-[hsl(38,61%,73%)] border-2 mt-[30px] hover:bg-[hsl(38,61%,73%)] hover:text-black hover:cursor-pointer transition-all duration-300"
-          >
-            VIEW OUT MENU
-          </button>
+          <PrimaryButton content ="VIEW OUR MENU"/>
+        
         </motion.div>
       </AnimatePresence>
     </div>
