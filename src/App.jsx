@@ -11,8 +11,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <SpeciatDish />
-      <Menu />
+
 
     </>
   )

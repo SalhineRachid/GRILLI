@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const fakeApi = axios.create({
-    baseURL : '/Data'
+    baseURL : '/Data/'
 }
 )
 
