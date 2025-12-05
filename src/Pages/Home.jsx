@@ -9,7 +9,7 @@ import "./font.css";
 function Home() {
   const items = [
     {
-      title: "TRADATIONAL & HYGINE",
+      title: "TRADITIONAL & HYGIENE",
       subtitle: "For the love of delicious food",
       background: pic1,
     },
@@ -23,7 +23,7 @@ function Home() {
       subtitle: "Where every flavor tells a story",
       background: pic3,
     },
-  ];
+  ];  
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ function Home() {
   return (
     <div
       key={currentIndex}
-      className="bg-cover bg-center bg-fixed bgZoomIn overflow-hidden h-screen w-full flex flex-col justify-between items-center text-white px-8 py-12"
+      className="bg-cover  bg-center  bgZoomIn overflow-hidden  h-screen w-full flex flex-col justify-between items-center text-white px-8 py-12"
       style={{ backgroundImage: `url(${items[currentIndex].background})` }}
     >
       <AnimatePresence mode="wait">

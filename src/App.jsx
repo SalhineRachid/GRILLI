@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import Menu from './Pages/Menu'
 import SpeciatDish from './Pages/SpeciatDish'
+import Contact_us from './Pages/Contact_us'
 function App() {
   
 
@@ -11,6 +12,9 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <Menu />
+      <SpeciatDish />
+      <Contact_us />
 
 
     </>

@@ -8,7 +8,7 @@ import menu5 from "../assets/menu-5.png";
 import menu6 from "../assets/menu-6.png";
 import shape5 from "../assets/shape-5.png";
 import shape6 from "../assets/shape-6.png";
-import separator from "../assets/separator.svg";
+import separator from "../assets/separator.svg"; 
 import "./font.css";
 import fakeApi from "../api";
 import PrimaryButton from "../Components/PrimaryButton";
@@ -54,7 +54,7 @@ function Menu() {
   const rightColumn = menuData.menuItems.slice(3, 6);
 
   return (
-    <div className="relative h-screen w-full flex justify-center items-center bg-[#171616]">
+    <div className="relative min-h-screen w-full flex justify-center items-center bg-[#171616]">
       <img
         className="absolute w-[45%] h-[90%] top-[2.9rem] inset-0 z-0 upDownMotion "
         src={shape5}
@@ -64,7 +64,7 @@ function Menu() {
         <img className="absolute w-[full] upDownMotion z-0" src={shape6} />
       </div>
 
-      <div className="relative z-10 h-screen w-full flex flex-col justify-between items-center gap-8 text-center px-8 py-12">
+      <div className="relative z-10 h-screen w-full flex flex-col justify-center items-center gap-4 text-center px-8 py-12">
         <div className="flex flex-col justify-center items-center text-center">
           <h4
             id="apply-dm_sans-font"
@@ -79,7 +79,7 @@ function Menu() {
           {menuData.page.title}
         </h1>
 
-        <div className="w-[full] h-[70%] flex justify-center items-center gap-40  top-[10rem]">
+        <div className="w-[full] h-[50%] flex justify-center items-center gap-40  top-[10rem]">
           <div className="w-[60%] flex flex-col justify-between items-center gap-12 text-white">
             {leftColumn.map((item, index) => (
               <MenuItem
