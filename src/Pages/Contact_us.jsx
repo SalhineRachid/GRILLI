@@ -8,18 +8,18 @@ import "./font.css";
 function Contact_us() {
   return (
     <div
-      className=" w-full min-h-screen  flex items-center p-[5%]"
+      className=" w-full min-h-screen  flex justify-center items-center p-[5%]"
       style={{ backgroundImage: `url(${screen})` }}
     >
       <div
-        className=" relative w-1/2 h-[90%] flex flex-col justify-center items-center gap-10 text-white"
+        className=" relative w-1/2 h-[90%] flex flex-col justify-center items-center text-white"
         style={{ backgroundImage: `url(${formPattern})` }}
       >
         <img
           className="absolute w-[60%] h-[90%] inset-0 z-0 upDownMotion "
           src={shape5}
         />
-        <div className="relative z-10 flex flex-col justify-center items-center gap-10">
+        <div className="relative w-1/2 h-[70%] z-10 flex flex-col justify-center items-center gap-8">
           <h1 id="apply-forum-font" className="text-7xl">
             Contact US
           </h1>

@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Menu from './Pages/Menu'
 import SpeciatDish from './Pages/SpeciatDish'
 import Contact_us from './Pages/Contact_us'
+import About_us from './Pages/About_us'
 function App() {
   
 
@@ -12,8 +13,10 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <About_us />
       <Menu />
       <SpeciatDish />
+      
       <Contact_us />
 
 
