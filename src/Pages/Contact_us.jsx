@@ -8,7 +8,7 @@ import "./font.css";
 function Contact_us() {
   return (
     <div
-      className=" w-full min-h-screen  flex justify-center items-center p-[5%]"
+      className=" min-w-full min-h-screen  flex items-center p-[5%]"
       style={{ backgroundImage: `url(${screen})` }}
     >
       <div

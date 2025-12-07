@@ -54,7 +54,7 @@ function Menu() {
   const rightColumn = menuData.menuItems.slice(3, 6);
 
   return (
-    <div className="relative min-h-screen w-full flex justify-center items-center bg-[#171616]">
+    <div className="relative min-h-screen min-w-full flex justify-center items-center bg-[#171616]">
       <img
         className="absolute w-[45%] h-[90%] top-[2.9rem] inset-0 z-0 upDownMotion "
         src={shape5}

@@ -3,10 +3,10 @@ import logo from "../assets/logo.svg";
 
 function Navbar() {
   return (
-    <nav class="flex justify-between items-center p-[1%] fixed w-full bg-transparent ">
+    <nav class=" w-full flex justify-between items-center p-[1%] fixed bg-transparent ">
       <img src={logo} />
 
-      <li class="flex w-[30%] justify-between items-center font-dm_sans text-white text-[0.90rem] font-semibold">
+      <li class="flex sm:hidden w-[30%] justify-between items-center font-dm_sans text-white text-[0.90rem] font-semibold">
         <ul>HOME</ul>
         <ul>MENUS</ul>
         <ul>ABOUT US</ul>
