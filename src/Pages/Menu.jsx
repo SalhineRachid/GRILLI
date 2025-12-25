@@ -79,7 +79,7 @@ function Menu() {
           {menuData.page.title}
         </h1>
 
-        <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-40 mb-8">
+        <div className="w-[60%] flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-40 mb-8">
           <div className="w-full lg:w-[60%] flex flex-col justify-between items-center gap-6 lg:gap-8 text-white">
             {leftColumn.map((item, index) => (
               <MenuItem
