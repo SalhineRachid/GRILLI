@@ -36,7 +36,7 @@ function Home() {
   return (
     <div
       key={currentIndex}
-      className="bgZoomIn overflow-hidden h-screen w-full flex flex-col justify-between items-center text-white"
+      className="bgZoomIn overflow-hidden h-screen w-full flex flex-col justify-center items-center text-white"
       style={{ backgroundImage: `url(${items[currentIndex].background})` }}
       id="home"
     >
@@ -47,7 +47,7 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -40 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="relative z-10 flex flex-col justify-between items-center text-center h-screen px-8 py-12 w-full"
+          className="relative z-10 flex flex-col justify-between items-center text-center h-[80%] px-8 py-12 w-full"
         >
           <div className="flex flex-col items-center">
             <h4
@@ -69,7 +69,7 @@ function Home() {
 
           <span
             id="apply-dm_sans-font"
-            className="font-semibold text-sm sm:text-lg md:text-xl lg:text-[20px] mb-[0.625rem] mt-[0.625rem]"
+            className="font-semibold text-sm sm:text-lg md:text-xl lg:text-[20px] mb-2.5 mt-2.5"
           >
             Come with family & feel the joy of mouthwatering food
           </span>
