@@ -47,7 +47,7 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -40 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="relative z-10 flex flex-col justify-between items-center text-center h-[80%] px-8 py-12 w-full"
+          className="relative z-10 flex flex-col justify-between items-center text-center h-[80%]  w-full"
         >
           <div className="flex flex-col items-center">
             <h4
@@ -61,7 +61,7 @@ function Home() {
           </div>
 
           <h1
-            className="text-[2rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[7rem] w-11/12 md:w-3/4 lg:w-2/3 flex items-center justify-center p-2 sm:p-4"
+            className="text-[2rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] xl:text-[7rem] w-11/12 md:w-3/4 lg:w-2/3 flex items-center justify-center p-2 sm:p-4"
             id="apply-forum-font"
           >
             {items[currentIndex].subtitle}
