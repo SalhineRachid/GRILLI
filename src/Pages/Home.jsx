@@ -36,8 +36,9 @@ function Home() {
   return (
     <div
       key={currentIndex}
-      className="bg-cover  bg-center  bgZoomIn overflow-hidden  h-screen w-full flex flex-col justify-between items-center text-white px-8 py-12"
+      className="bgZoomIn overflow-hidden h-screen w-full flex flex-col justify-between items-center text-white"
       style={{ backgroundImage: `url(${items[currentIndex].background})` }}
+      id="home"
     >
       <AnimatePresence mode="wait">
         <motion.div
@@ -46,7 +47,7 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -40 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="relative flex flex-col justify-between items-center text-center h-screen px-8 py-12 w-full"
+          className="relative z-10 flex flex-col justify-between items-center text-center h-screen px-8 py-12 w-full"
         >
           <div className="flex flex-col items-center">
             <h4
@@ -56,11 +57,11 @@ function Home() {
               {items[currentIndex].title}
             </h4>
 
-            <img src={separator} className="w-[7.5rem] h-[3.75rem] " />
+            <img src={separator} className="w-30 h-15 " />
           </div>
 
           <h1
-            className="text-[2rem] sm:text-[4rem] md:text-[5.5rem] lg:text-[7rem] w-11/12 md:w-3/4 lg:w-2/3 flex items-center justify-center p-2 sm:p-4"
+            className="text-[2rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[7rem] w-11/12 md:w-3/4 lg:w-2/3 flex items-center justify-center p-2 sm:p-4"
             id="apply-forum-font"
           >
             {items[currentIndex].subtitle}
@@ -68,7 +69,7 @@ function Home() {
 
           <span
             id="apply-dm_sans-font"
-            className="font-semibold text-[20px] mb-[0.625rem] mt-[0.625rem]"
+            className="font-semibold text-sm sm:text-lg md:text-xl lg:text-[20px] mb-[0.625rem] mt-[0.625rem]"
           >
             Come with family & feel the joy of mouthwatering food
           </span>

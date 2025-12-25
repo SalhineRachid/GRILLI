@@ -54,33 +54,33 @@ function Menu() {
   const rightColumn = menuData.menuItems.slice(3, 6);
 
   return (
-    <div className="relative min-h-screen min-w-full flex justify-center items-center bg-[#171616]">
+    <div className="relative min-h-screen w-full flex justify-center items-center bg-[#171616]" id="menu">
       <img
-        className="absolute w-[45%] h-[90%] top-[2.9rem] inset-0 z-0 upDownMotion "
+        className="absolute w-[80%] sm:w-[45%] h-[90%] top-[2.9rem] inset-0 z-0 upDownMotion"
         src={shape5}
       />
 
-      <div className="absolute w-[600px] h-[350px] bottom-[70px] right-0 ">
-        <img className="absolute w-[full] upDownMotion z-0" src={shape6} />
+      <div className="absolute w-[300px] sm:w-[600px] h-[175px] sm:h-[350px] bottom-[35px] sm:bottom-[70px] right-0">
+        <img className="absolute w-full upDownMotion z-0" src={shape6} />
       </div>
 
-      <div className="relative z-10 h-screen w-full flex flex-col justify-center items-center gap-4 text-center px-8 py-12">
-        <div className="flex flex-col justify-center items-center text-center">
+      <div className="relative z-10 min-h-screen w-full flex flex-col justify-center items-center gap-6 text-center px-4 sm:px-8 py-8 sm:py-12">
+        <div className="flex flex-col justify-center items-center text-center mb-4">
           <h4
             id="apply-dm_sans-font"
-            className="font-bold  text-[13px] text-[hsl(38,61%,73%)] tracking-widest"
+            className="font-bold text-xs sm:text-[13px] text-[hsl(38,61%,73%)] tracking-widest"
           >
             {menuData.page.subtitle}
           </h4>
-          <img src={separator} className="w-[7.5rem] h-[3.75rem] " />
+          <img src={separator} className="w-24 sm:w-[7.5rem] h-12 sm:h-[3.75rem] mt-2" />
         </div>
 
-        <h1 id="apply-forum-font" className="text-[4.5rem] text-white">
+        <h1 id="apply-forum-font" className="text-3xl sm:text-5xl lg:text-[4.5rem] text-white mb-6">
           {menuData.page.title}
         </h1>
 
-        <div className="w-[full] h-[50%] flex justify-center items-center gap-40  top-[10rem]">
-          <div className="w-[60%] flex flex-col justify-between items-center gap-12 text-white">
+        <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-40 mb-8">
+          <div className="w-full lg:w-[60%] flex flex-col justify-between items-center gap-6 lg:gap-8 text-white">
             {leftColumn.map((item, index) => (
               <MenuItem
                 key={item.id}
@@ -91,7 +91,7 @@ function Menu() {
               />
             ))}
           </div>
-          <div className="w-[60%] flex flex-col justify-between items-center gap-12 text-white">
+          <div className="w-full lg:w-[60%] flex flex-col justify-between items-center gap-6 lg:gap-8 text-white">
             {rightColumn.map((item, index) => (
               <MenuItem
                 key={item.id}
