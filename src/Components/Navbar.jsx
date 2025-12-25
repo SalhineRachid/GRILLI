@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <nav className="w-full flex justify-between items-center p-[1%] fixed bg-transparent z-20">
-      <img src={logo} />
+      <img src={logo} className="w-24 sm:w-28 md:w-32 lg:w-36" />
 
       {/* Desktop menu */}
       <li className="hidden lg:flex w-[30%] justify-between items-center font-dm_sans text-white text-[0.90rem] font-semibold">
@@ -19,7 +19,7 @@ function Navbar() {
       </li>
 
       <div className="flex items-center gap-4">
-        <button className="w-40 sm:w-48 lg:w-[200px] h-12 sm:h-14 lg:h-[57px] border-2 bg-[hsl(38,61%,73%)] font-forum font-bold text-xs sm:text-sm lg:text-[12px] tracking-[3px] hover:border-[hsl(38,61%,73%)] hover:bg-black hover:text-white hover:cursor-pointer transition-all duration-300">
+        <button className="w-40 sm:w-45 md:w-45 lg:w-[200px] h-12 sm:h-11 lg:h-[57px] border-2 bg-[hsl(38,61%,73%)] font-forum font-bold text-xs sm:text-xs lg:text-[12px] tracking-[3px] hover:border-[hsl(38,61%,73%)] hover:bg-black hover:text-white hover:cursor-pointer transition-all duration-300">
           FIND A TABLE
         </button>
 
