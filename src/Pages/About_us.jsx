@@ -16,7 +16,7 @@ function About_us() {
                 id="apply-dm_sans-font"
                 className="font-bold text-xs sm:text-[13px] text-[hsl(38,61%,73%)] custom-letter-spacing"
               >
-                SPECIAL DISH
+                OUR STORY
               </h4>
               <img src={separator} className="w-24 sm:w-[7rem] h-12 sm:h-[3rem]" />
             </div>
@@ -45,7 +45,7 @@ function About_us() {
                 $20.00
               </span>
             </div>
-            <PrimaryButton content="VIEW ALL MENU" />
+            <PrimaryButton content="READ MORE" />
           </div>
         
         <div className="w-full lg:w-[60%] flex justify-center items-center">
