@@ -16,10 +16,7 @@ function App() {
       <About_us />
       <Menu />
       <SpeciatDish />
-      
       <Contact_us />
-
-
     </>
   )
 }

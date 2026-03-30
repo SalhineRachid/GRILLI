@@ -1,11 +1,14 @@
 import React from "react";
 import separator from "../assets/separator.svg";
 import PrimaryButton from "../Components/PrimaryButton";
+import aboutBanner from "../assets/about-banner.jpg"
+import aboutPattern from "../assets/img-pattern.svg"
+import aboutPicture from "../assets/about-abs-image.jpg"
 import "./font.css";
 function About_us() {
   return (
     <div className="w-full min-h-screen flex justify-center items-center bg-[#171616] px-4 py-8" id="about">
-      <div className="w-full max-w-6xl h-auto flex flex-col lg:flex-row justify-center items-center text-white gap-8">
+      <div className="w-full max-w-7xl h-auto flex flex-col lg:flex-row justify-center items-center text-white gap-8">
         
           <div className="flex flex-col items-center justify-center w-full lg:w-[40%] gap-6 lg:gap-8">
             <div className="flex flex-col justify-center items-center text-center">
@@ -46,8 +49,11 @@ function About_us() {
           </div>
         
         <div className="w-full lg:w-[60%] flex justify-center items-center">
-          {/* Placeholder for image or content */}
-          <div className="text-white">Image or Content Here</div>
+          <div className="text-white relative w-full h-[280px] sm:h-[340px] lg:h-[420px]">
+            <img className="absolute z-0 right-0 bottom-0" src= {aboutBanner}/>
+            <img className="absolute z-10 left-28 top-40 w-[200px] h-[400px]" src={aboutPattern}/>
+            <img className="absolute z-20 right-100 top-55" src={aboutPicture}/>
+          </div>
         </div>
       </div>
     </div>
